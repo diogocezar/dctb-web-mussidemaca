@@ -1,0 +1,143 @@
+body{
+	background-color: #84dbff;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	color: #fff;
+	font-weight: normal;
+}
+
+#container  {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2147483647;
+	height: 100%;
+}
+
+#infos{
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    text-align: center;
+}
+
+#infos .margin-bottom{
+	margin-bottom: 30px;
+}
+
+#infos h2{
+	font-size: 1.2em;
+	line-height: 0.5em;
+}
+
+#infos h3{
+	font-size: 1em;
+	line-height: 0.2em;
+	color: #f36f59;
+}
+
+#infos h4{
+	font-size: 0.9em;
+	line-height: 0.2em;
+}
+
+#logo {
+    background-image: url('../images/logo.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    left: 50%;
+    top: 40%;
+    position: absolute;
+    margin: -250px 0 0 -250px;
+}
+
+@media screen and (max-height: 795px){
+	#logo {
+		background-image: url("../images/logo.svg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 352px;
+		width: 341px;
+		left: 50%;
+		top: 40%;
+		position: absolute;
+		margin: -176px 0 0 -170px;
+	}
+	#infos h2{
+		font-size: 1em;
+		line-height: 0.4em;
+	}
+
+	#infos h3{
+		font-size: 0.8em;
+		line-height: 0.15em;
+		color: #f36f59;
+	}
+
+	#infos h4{
+		font-size: 0.8em;
+		line-height: 0.15em;
+	}
+}
+
+@media screen and (max-width: 991px){
+	#logo {
+		background-image: url("../images/logo.svg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 352px;
+		width: 341px;
+		left: 50%;
+		top: 40%;
+		position: absolute;
+		margin: -176px 0 0 -170px;
+	}
+	#infos h2{
+		font-size: 1em;
+		line-height: 0.4em;
+	}
+
+	#infos h3{
+		font-size: 0.8em;
+		line-height: 0.15em;
+		color: #f36f59;
+	}
+
+	#infos h4{
+		font-size: 0.8em;
+		line-height: 0.15em;
+	}
+}
+
+@media screen and (max-width: 460px){
+	#logo {
+	    background-image: url('../images/logo.svg');
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    height: 280px;
+	    width: 280px;
+	    left: 50%;
+	    top: 33%;
+	    position: absolute;
+	    margin: -140px 0 0 -140px;
+	}
+	#infos {
+	    position: absolute;
+	    bottom: -145px;
+	    width: 100%;
+	    text-align: center;
+	}
+	#infos h2{
+		font-size: 0.8em;
+		line-height: 0.4em;
+	}
+}
+
+a{
+	color: #f36f59!important;
+	text-decoration: none!important;
+}
