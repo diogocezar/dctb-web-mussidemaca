@@ -21,15 +21,16 @@
 		<textarea id="mensagem" placeholder="mensagem">Testando uma nova mensagem.</textarea>
 		<button data-backless-send="true">Enviar</button>
 	</form>
+	<div class="result">Testando mensagem</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 	<script src="http://backless.diogocezar.com.br/js/back-less.js"></script>
 	<script>
 		BackLess.token = '844eea5fde64f707adb4f2eb780e1a9d';
 		BackLess.callBacks.success = function(result){
-			console.log(result);
+			$(".result").empty().html(result.msg).fadeIn();
 		};
 		BackLess.callBacks.error = function(result){
-			console.log(result);
+			$(".result").empty().html(result.msg).fadeIn();
 		};
 	</script>
 </body>
